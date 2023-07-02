@@ -1,0 +1,38 @@
+EVIL CROW
+
+Source Code (h-Rat Firmware): https://github.com/h-RAT/EvilCrowRF_Custom_Firmware_CC1101_FlipperZero/tree/main/EvilCrowRF
+
+Material:
+2 x ESP 32
+2 x CC1101
+3 Push Button
+
+Wiring
+
+CC1101 Roll & Jam
+
+	Roll 	Jam
+	-----------
+SCK	14	14
+MISO	12	12
+MOSI	13	13
+-------------------
+			CSN	5 tidak dipakai
+CSN	27	27
+			GDO	2 tidak dipakai
+GDO	25	25
+			GD02	4 tidak dipakai	
+GD02	26	26
+------------------
+
+Push Button
+-----------
+Button 1   34 (5V ESP32 -> Resistor 10K <- D34 ESP32, kemudian sambung D4 ESP32 -> Saklar <- GND ESP32)
+Button 2   35
+
+Micro SD
+----------
+SCK	18
+MISO	19
+MOSI	23
+CSN/SS	22	
